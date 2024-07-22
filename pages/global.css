@@ -1,0 +1,9 @@
+:root {
+    --color-primaryBG: rgb(18, 17, 17);
+    --color-secondaryBG: rgb(37, 36, 36);
+    --color-primaryFont: rgb(214, 200, 193);
+    --color-secondaryFont: rgb(244, 237, 235);
+
+    --color-primaryBG-overlay: rgba(18, 17, 17, 0.9);
+    --color-primaryFont-overlay: rgba(214, 200, 193, 0.1);
+}
