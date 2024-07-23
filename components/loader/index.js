@@ -16,8 +16,8 @@ const Loader = ({ timeline }) => {
         timeline &&
             timeline
                 .add(introAnimation(wordGroupsRef))
-                .add(progressAnimation(progressRef, progressNumberRef), 0)
-                .add(collapseWords(loaderRef), "-=1");
+                .add(progressAnimation(progressRef, overlayRef, progressNumberRef), 0)
+                // .add(collapseWords(loaderRef), "-=1");
     }, [timeline]);
 
     // useEffect(() => { } , []);
@@ -29,7 +29,7 @@ const Loader = ({ timeline }) => {
                     <div className={styles.loader__progress} ref={progressRef}></div>
                 </div>
                 <span className={styles.loader__progressNumber} ref={progressNumberRef}>
-                    0
+                    0%
                 </span>
 
                 <div className={styles.loader} ref={loaderRef}>

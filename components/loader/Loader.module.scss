@@ -128,13 +128,12 @@
 
     &__progressNumber {
         position: relative;
-        // left: -5vw;
         top: 85%;
         left: 50%;
         z-index: 5;
         white-space: nowrap;
         color: $color-offWhite_01;
-        // color: red;
+        @include jost-regular; 
         font-size: 8rem;
     }
 }
